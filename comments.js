@@ -1,6 +1,91 @@
 // Generate Fibonacci sequence
 
-var fib = function(n) {
+const fibonacci = n => {
+  if (n < 3) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// console.log(fibonacci(10));
+
+// Path: comments.js
+// Generate Fibonacci sequence
+
+// const fibonacci = n => {
+//   if (n < 3) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// };
+
+// consolevar fib = function(n) {
     var fibo = [0, 1];
     if (n <= 2) return 1;
     for (var i = 2; i <=n; i++ ) {
