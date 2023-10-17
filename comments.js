@@ -1,179 +1,34 @@
-// Generate Fibonacci sequence
+// Generate Fibonacci sequence.
+// Return the sequence as an array.
+// Return the sequence as a string, with the values separated by commas.
+// Return the sum of the sequence.
 
-const fibonacci = n => {
-  if (n < 3) return 1;
-  return fibonacci(n - 1) + fibonacci(n - 2);
-};
+// Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...
 
-console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// console.log(fibonacci(10));
-
-// Path: comments.js
-// Generate Fibonacci sequence
-
-// const fibonacci = n => {
-//   if (n < 3) return 1;
-//   return fibonacci(n - 1) + fibonacci(n - 2);
-// };
-
-// consolevar fib = function(n) {
-    var fibo = [0, 1];
-    if (n <= 2) return 1;
-    for (var i = 2; i <=n; i++ ) {
-        fibo[i] = fibo[i-1]+fibo[i-2];
+function fibonacciGenerator(n) {
+  //Do NOT change any of the code above 👆
+  var output = [];
+  if (n === 1) {
+    output = [1];
+  } else if (n === 2) {
+    output = [1, 1];
+  } else {
+    output = [1, 1];
+    for (var i = 2; i < n; i++) {
+      output.push(output[output.length - 2] + output[output.length - 1]);
     }
-    return fibo[n];
-};
-
-console.log(fib(12));
-
-// Path: comments.js
-// Generate Fibonacci sequence recursively
-
-var fib = function(n) {
-    if (n <= 1) {
-        return n;
-    } else {
-        return fib(n-1) + fib(n-2);
-    }
-};
-console.log(fib(12));
-
-// Path: comments.js
-// Bubble Sort
-
-var bubbleSort = function(array) {
-    var swapped = true;
-    while (swapped) {
-        swapped = false;
-        for (var i = 0; i < array.length-1; i++) {
-            if (array[i+1] < array[i]) {
-                var temp = array[i];
-                array[i] = array[i+1];
-                array[i+1] = temp;
-                swapped = true;
-            }
-        }
-    }
-    return array;
-};
-
-console.log(bubbleSort([6,5,4,3,2,1]));
-
-// Path: comments.js
-// Merge Sort
-
-var mergeSort = function(array) {
-    if (array.length < 2) {
-        return array;
-    }
-
-    var middle = parseInt(array.length / 2);
-    var left = array.slice(0, middle);
-    var right = array.slice(middle, array.length);
-
-    return merge(mergeSort(left), mergeSort(right));
-};
-
-var merge = function(left, right) {
-    var result = [];
-
-    while (left.length && right.length) {
-        if (left[0] <= right[0]) {
-            result.push(left.shift());
-        } else {
-            result.push(right.shift());
-        }
-    }
-
-    while (left.length) {
-        result.push(left.shift());
-    }
-
-    while (right.length) {
-        result.push(right.shift());
-    }
-
-    return result;
-};
-
-console.log(mergeSort([6,5,4,3,2,1]));
-
-// Path: comments.js
-// Quicksort
-
-var quickSort = function(array) {
-    if (array.length < 2) {
-        return array;
-    }
-
-    var pivot = array
+  }
+  return output;
+  //Return an array of fibonacci numbers starting from 1.
+  //Do NOT change any of the code below 👇
+}
+console.log(fibonacciGenerator(1));
+console.log(fibonacciGenerator(2));
+console.log(fibonacciGenerator(3));
+console.log(fibonacciGenerator(4));
+console.log(fibonacciGenerator(5));
+console.log(fibonacciGenerator(6));
+console.log(fibonacciGenerator(7));
+console.log(fibonacciGenerator(8));
+console.log(fibonacciGenerator(9));
+console.log(fibonacciGenerator(10));
